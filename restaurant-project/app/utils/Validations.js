@@ -7,7 +7,7 @@ const formValidation = {
     ); //Significa que debe tener @
   }),
   password: t.refinement(t.String, value => {
-    return value.lenght >= 6; //Mas de 6 char
+    return value.length >= 6; //Mas de 6 char
   })
 };
 

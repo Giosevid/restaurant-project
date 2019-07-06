@@ -14,6 +14,7 @@ import Search from "../screens/Search";
 import TopFive from "../screens/TopFive";
 import { createNativeWrapper } from "react-native-gesture-handler";
 import RegisterScreen from "../screens/MyAccount/Register"
+import Login from "../screens/MyAccount/Login"
 
 const homeScreenStack = createStackNavigator({
   Home: {
@@ -53,6 +54,12 @@ const myAccounthScreen = createStackNavigator({
     screen: RegisterScreen,
     navigationOptions: ({ navigation }) => ({
       title: "Registro"
+    })
+  },
+  Login: {
+    screen: Login,
+    navigationOptions: ({ navigation }) => ({
+      title: "Login"
     })
   }
 });
